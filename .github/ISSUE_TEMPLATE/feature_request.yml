@@ -1,0 +1,56 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🙋 Feature Request
+        Please provide details about the feature or improvement you'd like to see.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One-sentence description of the feature.
+      placeholder: e.g. Add dark mode support
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this feature needed?
+      description: Explain the problem it solves or the value it adds.
+      placeholder: |
+        Right now, it's hard to use the UI at night. A dark mode would improve usability.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Suggested Solution
+      description: Describe how you’d like this feature implemented.
+      placeholder: |
+        Add a toggle in settings to switch themes. Store the preference in local storage.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered other ways to solve this?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add links, mockups, or screenshots if helpful.
+      placeholder: Drop any extra info here.
+    validations:
+      required: false
